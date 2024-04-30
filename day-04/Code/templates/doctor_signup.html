@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DPH-doctor-register</title>
+    <link rel="stylesheet" href="/static/CSS/register.css">
+</head>
+<body>
+    <div class="registerPage flex">
+        <div class="container flex">
+
+            <div class="videoDiv">
+                <img src="static\images\img.avif" alt="" />
+
+                <!-- <div class="textDiv">
+                    <h2 class="title">Create Account and Explore More Doctors</h2>
+                </div>   -->
+
+                <div class="footerDiv flex">
+                    <span class="text">Have an account?</span>
+                    <a href="{{ url_for('login') }}">
+                        <button class="btn">Login</button>
+                    </a>
+                </div>
+            </div>
+
+            <div class="formDiv flex">
+                <!-- <div class="headerDiv">
+                    <img src="static\images\logo.png" alt="Logo Image" />
+                </div> -->
+
+                <form action="" class="form grid" action="{{ url_for('signup') }}" method="POST">
+
+                    <div class="inputDiv">
+                        <label for="email">Email</label>
+                        <div class="input flex">
+                            <input type="email" id="email" name="email" placeholder="Enter Email" />
+                        </div>
+                    </div>
+
+                    <div class="inputDiv">
+                        <label for="username">Username</label>
+                        <div class="input flex">
+                            <input type="text" id="username" name="username" placeholder="Enter Username" />
+                        </div>
+                    </div>
+
+                    <div class="inputDiv">
+                        <label for="password">Password</label>
+                        <div class="input flex">
+                            <input type="password" id="password" name="password" placeholder="Enter Password" />
+                        </div>
+                    </div>
+
+                    <div class="inputDiv">
+                        <label for="confirmPassword">Confirm Password</label>
+                        <div class="input flex">
+                            <input type="password" id="confirmPassword" name="confirm_password" placeholder="Confirm Password" />
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn flex">
+                        <span>Register</span>
+                    </button>
+
+                    <!-- <span class="forgotPassword">
+                        Forgot your password? <a href="">Click Here</a>
+                    </span> -->
+
+                </form>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>

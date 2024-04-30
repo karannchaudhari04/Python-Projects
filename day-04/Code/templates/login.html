@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="/static/CSS/login.css">
+    <link rel="stylesheet" href="/static/CSS/App.css">
+</head>
+<body>
+    <div class="loginPage flex">
+        <div class="container flex">
+
+            <div class="videoDiv">
+                <video src="static\images\img.avif" autoplay muted loop></video>
+
+               
+                <div class="footerDiv flex">
+                    <span class="text">Don't have an account?</span>
+                    <a href="{{ url_for('signup') }}">
+                        <button class="btn">Sign Up</button>
+                    </a>
+                </div>
+            </div>
+
+            <div class="formDiv flex">
+                <div class="headerDiv">
+                    <img src="/static/images/logo.png" alt="Logo Image" />
+                    <h3>Welcome Back!</h3>
+                </div>
+
+                <form action="" class="form grid" action="{{ url_for('login') }}" method="POST">
+                    <span class="message"></span>
+
+                    <div class="inputDiv">
+                        <label for="username">Username</label>
+                        <div class="input flex">
+                            <input type="text" id='username' placeholder='Enter Username' name="username" />
+                        </div>
+                    </div>
+
+                    <div class="inputDiv">
+                        <label for="password">Password</label>
+                        <div class="input flex">
+                            <input type="password" id='password' placeholder='Enter Password' name="password" />
+                        </div>
+                    </div>
+
+                    <button type='submit' class='btn flex'>
+                        <span>Login</span>
+                    </button>
+
+                    <span class="forgotPassword">
+                        Forgot your password? <a href="">Click Here</a>
+                    </span>
+
+                </form>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
