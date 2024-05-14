@@ -14,21 +14,24 @@ function startDownload() {
     })
     .then(response => {
         if (response.ok) {
-            return response.blob();
+            const contentDisposition = response.headers.get('Content-Disposition');
+            const filename = contentDisposition.split('filename=')[1].split(';')[0].replace(/"/g, '');
+            return response.blob().then(blob => {
+                const url = window.URL.createObjectURL(blob);
+                const a = document.createElement('a');
+                a.href = url;
+                a.download = filename;
+                document.body.appendChild(a);
+                a.click();
+                a.remove();
+            });
         } else {
-            throw new Error(`Server responded with ${response.status}`);
+            return response.text().then(error => {
+                alert(`Error: ${error}`);
+            });
         }
     })
-    .then(blob => {
-        const url = window.URL.createObjectURL(blob);
-        const a = document.createElement('a');
-        a.href = url;
-        a.download = "video.mp4"; // Set default filename
-        document.body.appendChild(a);
-        a.click();
-        document.body.removeChild(a);
-    })
     .catch(error => {
-        alert(`Error: ${error.message}`);
+        alert(`Error: ${error}`);
     });
 }

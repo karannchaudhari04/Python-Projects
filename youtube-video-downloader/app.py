@@ -1,8 +1,7 @@
-from flask import Flask, render_template, request, send_file
+from flask import Flask, render_template, request, make_response
 from pytube import YouTube
 from werkzeug.utils import secure_filename
 import os
-import tempfile
 
 app = Flask(__name__)
 
@@ -18,13 +17,17 @@ def download_video():
         video = yt.streams.get_highest_resolution()
 
         filename = secure_filename(f"{yt.title}.mp4")
-        
-        # Save video to a temporary location
-        temp_dir = tempfile.mkdtemp()
-        filepath = os.path.join(temp_dir, filename)
-        video.download(output_path=temp_dir, filename=filename)
 
-        return filepath  # Return the path to the downloaded video
+        def generate_video_stream():
+            video.stream_to_buffer()
+            with video.streams.get_highest_resolution().stream_to_buffer() as stream:
+                yield from stream
+
+        response = make_response(generate_video_stream())
+        response.headers.set('Content-Type', 'video/mp4')
+        response.headers.set('Content-Disposition', f'attachment; filename="{filename}"')
+        return response
+
     except Exception as e:
         return str(e), 500
 
