@@ -8,17 +8,15 @@
     <div class="container">
         <h1>YouTube Video Downloader</h1>
         <input type="text" id="video-link" placeholder="Enter YouTube video link">
+        <br><br>
         <button onclick="startDownload()">Download</button>
-        <div id="download-progress" style="display: none;">
-            <p>Downloading video...</p>
-            <progress id="progress-bar" value="0" max="100" style="width: 100%;"></progress>
-        </div>
-        <div id="download-link" style="display: none;">
-            <p>Your video has been downloaded successfully!</p>
-            <a id="download-link-anchor" href="#" download>Download Video</a>
+        <br><br>
+        <div id="progress-bar" style="display: none;">
+            <div id="progress">0%</div>
         </div>
     </div>
 
     <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
 </body>
 </html>
