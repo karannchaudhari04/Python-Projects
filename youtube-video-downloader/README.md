@@ -6,7 +6,7 @@ This is a simple web application built with Python and Flask that allows users t
 
 Before running the application, make sure you have the following installed:
 
-- Python 3.x
+- Python 3.8 & above
 - Flask
 - pytube
 
