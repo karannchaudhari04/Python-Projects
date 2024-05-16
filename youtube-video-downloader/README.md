@@ -16,7 +16,7 @@ You can install the required Python packages using the following command:  pip i
 
 1. Clone or download the project repository.
 2. Navigate to the project directory in your terminal or command prompt.
-3. Run the following command to start the Flask development server:      flask run
+3. Run the following command to start the Flask development server:     flask run
 
 4. Once the server is running, open a web browser and navigate to `http://localhost:5000`.
 
