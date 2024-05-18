@@ -1,5 +1,7 @@
 Chatbot Using Python: Deep Learning Techniques
+
 This project aims to build a chatbot using deep learning techniques. The chatbot is trained on a dataset containing categories (intents), patterns, and responses. We utilize a special recurrent neural network (LSTM) to classify which category the user's message belongs to and then provide a random response from the list of corresponding responses.
+
 Getting Started
 To get the chatbot up and running, follow these steps:
 
