@@ -16,10 +16,12 @@ Copy codepython train_chatbot.py
 If the training is successful, you will see the message "model created".
 
 Running the Chatbot GUI
+
 To open the graphical user interface (GUI) window and start conversing with the chatbot, execute the chatgui.py file using the following command:
 Copy codepython chatgui.py
 This will open the GUI window. Write your text in the section to the right of the "Send" button and click "Send" to receive the chatbot's response.
 Error Guide
+
 If you encounter an error like ImportError: cannot import name 'tf_utils' while executing the train_chatbot.py file, follow these steps:
 
 Uninstall Keras using the command: pip uninstall keras
@@ -27,4 +29,5 @@ Reinstall Keras using the command: pip install keras==2.2.0
 
 After reinstalling Keras, try executing the train_chatbot.py file again. It should work properly.
 Contributing
+
 Contributions to this project are welcome. If you encounter any issues or have suggestions for improvements, please open an issue or submit a pull request.
