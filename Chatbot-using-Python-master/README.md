@@ -18,7 +18,7 @@ If the training is successful, you will see the message "model created".
 Running the Chatbot GUI
 
 To open the graphical user interface (GUI) window and start conversing with the chatbot, execute the chatgui.py file using the following command:
-Copy codepython chatgui.py
+python chatgui.py
 This will open the GUI window. Write your text in the section to the right of the "Send" button and click "Send" to receive the chatbot's response.
 Error Guide
 
