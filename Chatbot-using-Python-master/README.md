@@ -12,7 +12,7 @@ Ensure that your system has the following modules installed: TensorFlow, Keras, 
 
 Training the Chatbot Model
 To train and create the chatbot model, execute the train_chatbot.py file using the following command:
-Copy codepython train_chatbot.py
+python train_chatbot.py
 If the training is successful, you will see the message "model created".
 
 Running the Chatbot GUI
