@@ -1,4 +1,4 @@
-#https://github.com/tridibsamanta/Chatbot-using-Python
+#https://github.com/karannchaudhari04/Python/tree/main/Chatbot-using-Python-master
 
 import nltk
 from nltk.stem import WordNetLemmatizer
