@@ -49,6 +49,7 @@ print (len(words), "unique lemmatized words", words)
 pickle.dump(words,open('words.pkl','wb'))
 pickle.dump(classes,open('classes.pkl','wb'))
 
+
 # create our training data
 training = []
 # create an empty array for our output
