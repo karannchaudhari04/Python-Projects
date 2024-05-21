@@ -123,5 +123,4 @@ ChatLog.place(x=6, y=6, height=386, width=370)
 EntryBox.place(x=128, y=401, height=90, width=265)
 SendButton.place(x=6, y=401, height=90)
 
-
 base.mainloop()
