@@ -11,8 +11,6 @@
 
 ### Project at View
 
-* [Project Video Demo](https://www.youtube.com/watch?v=M-N31tPJa0I&t=15s)
-
 * Add Your Details
 <img src="https://github.com/DiptoChakrabarty/Resume-Generator/blob/master/images/projects.png">
 
