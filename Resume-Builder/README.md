@@ -12,13 +12,13 @@
 ### Project at View
 
 * Add Your Details
-<img src="https://github.com/karannchaudhari04/Python/tree/main/Resume-Builder/blob/master/images/projects.png">
+<img src="https://github.com/karannchaudhari04/Python/tree/main/Resume-Builder/images/projects.png">
 
 * Update your Details
-<img src="https://github.com/DiptoChakrabarty/Resume-Generator/blob/master/images/Update.png">
+<img src="https://github.com/karannchaudhari04/Python/tree/main/Resume-Builder/images/Update.png">
 
 * Delete Details
-<img src="https://github.com/DiptoChakrabarty/Resume-Generator/blob/master/images/delete.png">
+<img src="https://github.com/karannchaudhari04/Python/tree/main/Resume-Builder/images/delete.png">
 
  and much more
 
