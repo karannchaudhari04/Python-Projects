@@ -12,7 +12,7 @@
 ### Project at View
 
 * Add Your Details
-<img src="https://github.com/DiptoChakrabarty/Resume-Generator/blob/master/images/projects.png">
+<img src="https://github.com/karannchaudhari04/Python/tree/main/Resume-Builder/blob/master/images/projects.png">
 
 * Update your Details
 <img src="https://github.com/DiptoChakrabarty/Resume-Generator/blob/master/images/Update.png">
