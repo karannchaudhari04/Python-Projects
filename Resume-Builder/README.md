@@ -43,7 +43,7 @@ This section should list any major frameworks that you built your project using.
 
 1. Clone the repo
 ```sh
-git clone https://github.com/DiptoChakrabarty/Resume-Generator
+git clone https://github.com/karannchaudhari04/Python/tree/main/Resume-Builder
 ```
 2. Enter Directory
 ```sh
